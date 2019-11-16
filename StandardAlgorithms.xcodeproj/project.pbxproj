@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		311229652380253B00BAD7E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311229642380253B00BAD7E1 /* main.swift */; };
+		3112296C2380254D00BAD7E1 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112296B2380254D00BAD7E1 /* Sorting.swift */; };
+		3112296E2380257600BAD7E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112296D2380257600BAD7E1 /* main.swift */; };
+		3112297C2380261400BAD7E1 /* StandardAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112297B2380261400BAD7E1 /* StandardAlgorithmsTests.swift */; };
+		3112297D2380262D00BAD7E1 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112296B2380254D00BAD7E1 /* Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +27,22 @@
 
 /* Begin PBXFileReference section */
 		311229612380253B00BAD7E1 /* StandardAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
-		311229642380253B00BAD7E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3112296B2380254D00BAD7E1 /* Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		3112296D2380257600BAD7E1 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = "../../swift-algorithms/StandardAlgorithms/main.swift"; sourceTree = "<group>"; };
+		31122973238025ED00BAD7E1 /* StandardAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31122977238025ED00BAD7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3112297B2380261400BAD7E1 /* StandardAlgorithmsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardAlgorithmsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3112295E2380253B00BAD7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31122970238025ED00BAD7E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				311229632380253B00BAD7E1 /* StandardAlgorithms */,
+				31122974238025ED00BAD7E1 /* StandardAlgorithmsTests */,
 				311229622380253B00BAD7E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				311229612380253B00BAD7E1 /* StandardAlgorithms */,
+				31122973238025ED00BAD7E1 /* StandardAlgorithmsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +73,19 @@
 		311229632380253B00BAD7E1 /* StandardAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				311229642380253B00BAD7E1 /* main.swift */,
+				3112296B2380254D00BAD7E1 /* Sorting.swift */,
+				3112296D2380257600BAD7E1 /* main.swift */,
 			);
 			path = StandardAlgorithms;
+			sourceTree = "<group>";
+		};
+		31122974238025ED00BAD7E1 /* StandardAlgorithmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3112297B2380261400BAD7E1 /* StandardAlgorithmsTests.swift */,
+				31122977238025ED00BAD7E1 /* Info.plist */,
+			);
+			path = StandardAlgorithmsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,23 @@
 			productReference = 311229612380253B00BAD7E1 /* StandardAlgorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		31122972238025ED00BAD7E1 /* StandardAlgorithmsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31122978238025ED00BAD7E1 /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTests" */;
+			buildPhases = (
+				3112296F238025ED00BAD7E1 /* Sources */,
+				31122970238025ED00BAD7E1 /* Frameworks */,
+				31122971238025ED00BAD7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StandardAlgorithmsTests;
+			productName = StandardAlgorithmsTests;
+			productReference = 31122973238025ED00BAD7E1 /* StandardAlgorithmsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +137,10 @@
 				TargetAttributes = {
 					311229602380253B00BAD7E1 = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					31122972238025ED00BAD7E1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -111,16 +158,37 @@
 			projectRoot = "";
 			targets = (
 				311229602380253B00BAD7E1 /* StandardAlgorithms */,
+				31122972238025ED00BAD7E1 /* StandardAlgorithmsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31122971238025ED00BAD7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3112295D2380253B00BAD7E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				311229652380253B00BAD7E1 /* main.swift in Sources */,
+				3112296C2380254D00BAD7E1 /* Sorting.swift in Sources */,
+				3112296E2380257600BAD7E1 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3112296F238025ED00BAD7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3112297D2380262D00BAD7E1 /* Sorting.swift in Sources */,
+				3112297C2380261400BAD7E1 /* StandardAlgorithmsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +326,43 @@
 			};
 			name = Release;
 		};
+		31122979238025ED00BAD7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StandardAlgorithmsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-HDunlop-swift-algorithms.git.StandardAlgorithmsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3112297A238025ED00BAD7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StandardAlgorithmsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-HDunlop-swift-algorithms.git.StandardAlgorithmsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +380,15 @@
 			buildConfigurations = (
 				311229692380253B00BAD7E1 /* Debug */,
 				3112296A2380253B00BAD7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31122978238025ED00BAD7E1 /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31122979238025ED00BAD7E1 /* Debug */,
+				3112297A238025ED00BAD7E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
